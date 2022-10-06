@@ -1,5 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
 
+/* paleta de colores */
+
+:root{  
+    --background:#0D0D0D;;
+    --backgroundcard:##252525;
+    --yellownb:#FFA400;
+    --orangenb:#FC2933;
+    --textnb:#FFFFFF;
+}
+
+/* paleta de colores */
 
 *{
  margin: 0;
@@ -25,7 +36,7 @@ header{
     position: fixed;
     padding:20px 65px 0px 65px;
     z-index: 1;
-
+    margin-bottom: 50px;
 }
 
 header img{
@@ -33,6 +44,8 @@ header img{
     height: 79px;
   
 }
+
+/* NAVBAR */
 
 .navbar{
     display: flex;
@@ -63,20 +76,91 @@ header img{
     font-weight: 500;
     padding-left:10px
 }
-/* NAVBAR */
 
 
-
-
-
-
-
-/* paleta de colores */
-:root{  
-    --background:#0D0D0D;;
-    --backgroundcard:##252525;
-    --yellownb:#FFA400;
-    --orangenb:#FC2933;
-    --textnb:#FFFFFF;
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color:#fff;
+    flex-direction: column;
+    /* margin-top: 100px; */
 }
-/* paleta de colores */
+
+/* HERO  */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 50px;
+    margin: 150px 0px 0px 0px;
+    padding: 0px 0px;
+    width: 100%;
+}
+
+.heroInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 50px
+}
+
+.heroInfo h1 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 55px ;
+   
+}
+
+.heroInfo h2 {
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: 600;
+    
+}
+
+.heroInfo p {
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 400;
+    
+}
+.verMas{
+    background: -moz-linear-gradient(var(--yellownb), var(--orangenb));
+    background: linear-gradient(to right ,var(--yellownb), var(--orangenb));
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 120px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px ;
+    margin-top: 30px;
+}
+
+.heroImagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.pizzaIzq {
+    width: 260px;
+}
+
+.pizzaDer {
+    width: 380px;
+    position: absolute;
+    left: 930px;
+    top: 50px;
+}
+
+
+
+
+
+
+
